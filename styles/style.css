@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button, #screen {
+  font-size: 32px;
+}
+
+:root {
+  font-family: "Spartan", sans-serif;
+}
+
+:root body {
+  background-color: #3a4764;
+  color: white;
+}
+
+:root header {
+  color: white;
+}
+
+:root .switchIndicator {
+  background-color: #232c43;
+}
+
+:root .switchIndicator #toggle {
+  background-color: #d03f2f;
+}
+
+:root #screen {
+  background-color: #182034;
+  color: white;
+}
+
+:root main {
+  background-color: #232c43;
+}
+
+:root main button {
+  color: #444b5a;
+  background-color: #eae3dc;
+  -webkit-box-shadow: 0 3px #b4a597;
+          box-shadow: 0 3px #b4a597;
+}
+
+:root main button[value="reset"], :root main button[value="del"] {
+  background-color: #637097;
+  -webkit-box-shadow: 0 3px #404e72;
+          box-shadow: 0 3px #404e72;
+  color: white;
+}
+
+:root main button[value="result"] {
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0 3px #93261a;
+          box-shadow: 0 3px #93261a;
+  color: white;
+}
+
+:root .attribution a {
+  color: #d03f2f;
+  -webkit-text-decoration: underline wavy white;
+          text-decoration: underline wavy white;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+:root .attribution a:hover {
+  color: white;
+  -webkit-text-decoration: underline wavy #d03f2f;
+          text-decoration: underline wavy #d03f2f;
+}
+
+:root.themeTwo body {
+  background-color: #e6e6e6;
+  color: #35352c;
+}
+
+:root.themeTwo header {
+  color: #35352c;
+}
+
+:root.themeTwo .switchIndicator {
+  background-color: #d1cccc;
+}
+
+:root.themeTwo .switchIndicator #toggle {
+  background-color: #ca5502;
+}
+
+:root.themeTwo #screen {
+  background-color: #ededed;
+  color: #35352c;
+}
+
+:root.themeTwo main {
+  background-color: #d1cccc;
+}
+
+:root.themeTwo main button {
+  color: #35352c;
+  background-color: #e5e4e1;
+  -webkit-box-shadow: 0 3px #a69d91;
+          box-shadow: 0 3px #a69d91;
+}
+
+:root.themeTwo main button[value="reset"], :root.themeTwo main button[value="del"] {
+  background-color: #377f86;
+  -webkit-box-shadow: 0 3px #1b5f65;
+          box-shadow: 0 3px #1b5f65;
+  color: white;
+}
+
+:root.themeTwo main button[value="result"] {
+  background-color: #ca5502;
+  -webkit-box-shadow: 0 3px #893901;
+          box-shadow: 0 3px #893901;
+  color: white;
+}
+
+:root.themeTwo .attribution a {
+  color: #ca5502;
+  -webkit-text-decoration: underline wavy #35352c;
+          text-decoration: underline wavy #35352c;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+:root.themeTwo .attribution a:hover {
+  color: #35352c;
+  -webkit-text-decoration: underline wavy #ca5502;
+          text-decoration: underline wavy #ca5502;
+}
+
+:root.themeThree body {
+  background-color: #160628;
+  color: #ffe53d;
+}
+
+:root.themeThree header {
+  color: #ffe53d;
+}
+
+:root.themeThree .switchIndicator {
+  background-color: #1d0934;
+}
+
+:root.themeThree .switchIndicator #toggle {
+  background-color: #00e0d1;
+}
+
+:root.themeThree #screen {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+:root.themeThree main {
+  background-color: #1d0934;
+}
+
+:root.themeThree main button {
+  color: #ffe53d;
+  background-color: #341c4f;
+  -webkit-box-shadow: 0 3px #871c9c;
+          box-shadow: 0 3px #871c9c;
+}
+
+:root.themeThree main button[value="reset"], :root.themeThree main button[value="del"] {
+  background-color: #58077d;
+  -webkit-box-shadow: 0 3px #bc15f4;
+          box-shadow: 0 3px #bc15f4;
+  color: white;
+}
+
+:root.themeThree main button[value="result"] {
+  background-color: #00e0d1;
+  -webkit-box-shadow: 0 3px #6cf9f2;
+          box-shadow: 0 3px #6cf9f2;
+  color: #1b2428;
+}
+
+:root.themeThree .attribution a {
+  color: #00e0d1;
+  -webkit-text-decoration: underline wavy #ffe53d;
+          text-decoration: underline wavy #ffe53d;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+:root.themeThree .attribution a:hover {
+  color: #ffe53d;
+  -webkit-text-decoration: underline wavy #00e0d1;
+          text-decoration: underline wavy #00e0d1;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  padding: 0 2%;
+}
+
+#calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  width: 100%;
+  height: 550px;
+  padding: 0 1rem;
+}
+
+#calc header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+#calc header .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  width: 75%;
+}
+
+#calc header .titles h4 {
+  font-size: 1.5rem;
+}
+
+#calc header .titles #btnTheme {
+  cursor: pointer;
+}
+
+#calc header .themeIndicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 0.2rem;
+  width: 20%;
+}
+
+#calc header .themeIndicators .numericalIndicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 0;
+  width: 100%;
+}
+
+#calc header .themeIndicators .switchIndicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  gap: 0;
+  width: 100%;
+  height: 1.3rem;
+  border-radius: 2rem;
+  position: relative;
+  padding: 0 .3rem;
+  cursor: pointer;
+}
+
+#calc header .themeIndicators .switchIndicator #toggle {
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#calc #screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 0;
+  width: 100%;
+  height: 6rem;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+#calc main {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+#calc main button {
+  font-family: "Spartan", sans-serif;
+  cursor: pointer;
+  font-size: 25px;
+  height: 3rem;
+  border-radius: .5rem;
+  border: 0;
+  outline: none;
+}
+
+#calc main button[value="reset"], #calc main button[value="result"] {
+  grid-column: span 2;
+}
+
+#calc main button[value="reset"], #calc main button[value="result"], #calc main button[value="del"] {
+  font-size: 20px;
+}
+
+@media (max-width: 350px) {
+  #calc {
+    padding: 0;
+  }
+  #calc main {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  #calc {
+    width: 400px;
+  }
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

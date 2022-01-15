@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css" defer>
+  <title>Frontend Mentor | Calculator app</title>
+  <meta name="description" content="This is a simple calculator built with HTML5, Sass and JavaScript. Besides having a greater attention on accessibility!">
+
+</head>
+<body>
+
+  <section id="calc">
+    <header>
+      <div class="titles">
+        <h4>calc</h4>
+        <span id="btnTheme" title="Change theme"><h6>THEME</h6></span>
+      </div>
+
+      <div class="themeIndicators">
+        <div class="numericalIndicators">
+          <h6>1</h6>
+          <h6>2</h6>
+          <h6>3</h6>
+        </div>
+        <div class="switchIndicator" title="Change theme">
+            <div id="toggle"></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="screen">
+    </section>
+
+    <main>
+
+      <button type="button" value="7" title="Seven">7</button>
+      <button type="button" value="8" title="Eight">8</button>
+      <button type="button" value="9" title="Nine">9</button>
+      <button type="button" value="del" title="Delete last digit">DEL</button>
+
+
+      <button type="button" value="4" title="Four">4</button>
+      <button type="button" value="5" title="Five">5</button>
+      <button type="button" value="6" title="Six">6</button>
+      <button type="button" value="+" title="Add">+</button>
+
+      <button type="button" value="1" title="One">1</button>
+      <button type="button" value="2" title="Two">2</button>
+      <button type="button" value="3" title="Three">3</button>
+      <button type="button" value="-" title="Subtract">-</button>
+
+
+      <button type="button" value="." title="Dot">.</button>
+      <button type="button" value="0" title="Zero">0</button>
+      <button type="button" value="/" title="Divide">/</button>
+      <button type="button" value="x" title="Multiply">x</button>
+
+
+      <button type="button" value="reset" title="Delete all digits">RESET</button>
+      <button type="button" value="result" id="result" title="Result">=</button>
+
+    </main>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Arthur-Mendes-M" target="_blank" rel="noopener">Arthur Mendes</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

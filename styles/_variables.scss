@@ -1,0 +1,123 @@
+// Colors
+
+//// Background's
+
+////// Main Background
+
+//////// Theme 1
+$bg-theme1: hsl(222, 26%, 31%);
+//////// Theme 2
+$bg-theme2: hsl(0, 0%, 90%);
+//////// Theme 3
+$bg-theme3: hsl(268, 75%, 9%);
+
+
+////// Toggle, keypad [screen -> theme 3] Background
+
+//////// Theme 1
+$joker1: hsl(223, 31%, 20%);
+//////// Theme 2
+$joker2: hsl(0, 5%, 81%);
+//////// Theme 3
+$joker3: hsl(268, 71%, 12%); 
+
+
+////// Screen [theme 1 and theme 2] Background
+
+//////// Theme 1
+$screen1: hsl(224, 36%, 15%);
+//////// Theme 2
+$screen2: hsl(0, 0%, 93%);
+
+
+////// KEYS
+
+////// keys primary Background
+
+//////// Theme 1
+$key-p-bg-theme1: hsl(30, 25%, 89%);
+//////// Theme 2
+$key-s-bg-theme1: hsl(225, 21%, 49%);
+//////// Theme 3
+$key-t-bg-theme1: hsl(6, 63%, 50%);
+
+
+////// keys primary shadows
+
+//////// Theme 1
+$key-p-sd-theme1: hsl(28, 16%, 65%);
+//////// Theme 2
+$key-s-sd-theme1: hsl(224, 28%, 35%);
+//////// Theme 3
+$key-t-sd-theme1: hsl(6, 70%, 34%);
+
+
+
+
+////// keys secondary Background
+
+//////// Theme 1
+$key-p-bg-theme2: hsl(45, 7%, 89%);
+//////// Theme 2
+$key-s-bg-theme2: hsl(185, 42%, 37%);
+//////// Theme 3
+$key-t-bg-theme2: hsl(25, 98%, 40%);
+
+
+////// keys secondary shadows
+
+//////// Theme 1
+$key-p-sd-theme2: hsl(35, 11%, 61%);
+//////// Theme 2
+$key-s-sd-theme2: hsl(185, 58%, 25%);
+//////// Theme 3
+$key-t-sd-theme2: hsl(25, 99%, 27%);
+
+
+
+
+////// keys secondary Background
+
+//////// Theme 1
+$key-p-bg-theme3: hsl(268, 47%, 21%);
+//////// Theme 2
+$key-s-bg-theme3: hsl(281, 89%, 26%);
+//////// Theme 3
+$key-t-bg-theme3: hsl(176, 100%, 44%);
+
+
+////// keys secondary shadows
+
+//////// Theme 1
+$key-p-sd-theme3: hsl(290, 70%, 36%);
+//////// Theme 2
+$key-s-sd-theme3: hsl(285, 91%, 52%);
+//////// Theme 3
+$key-t-sd-theme3: hsl(177, 92%, 70%);
+
+
+
+
+
+////// Text's
+
+//////// Theme 1
+$color-p-theme1: hsl(221, 14%, 31%);
+//////// Theme 2
+$color-p-theme2: hsl(60, 10%, 19%);
+//////// Theme 3
+$color-p-theme3: hsl(52, 100%, 62%);
+$color-s-theme3: hsl(198, 20%, 13%);
+
+//////// Color joker
+$color-joker: hsl(0, 0, 100%);
+
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+$font-family: 'Spartan', sans-serif;
+$font-weight: 700;
+:root {
+    font-family: $font-family;
+}
